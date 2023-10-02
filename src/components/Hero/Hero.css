@@ -1,0 +1,254 @@
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-grey);
+
+    
+}
+
+.hero-left{
+   padding: 2rem;
+   padding-top: 1.5rem;
+   flex: 3;
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+}
+
+.hero-right{
+    flex: 1rem;
+    position: relative;
+    background-color: var(--color-blueberry);
+}
+
+.the-best-ad{
+    margin-top: 4rem;
+    background-color: var(--color-darkgrey);
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.the-best-ad>span {
+    z-index:2;
+}
+
+.the-best-ad> div{
+    position:absolute;
+    background-color: var(--color-blueberry);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+.hero-text{
+
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem ;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-overflow: inherit;
+    color:var(--color-white);
+ }
+
+ .hero-text>div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform:none;
+    letter-spacing: 1px;
+    width: 80%;
+
+}
+
+.figures{
+    display:flex;
+    gap:2rem;
+}
+
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1){
+    color: var(--color-white);
+    font-size: 2rem;
+
+}
+
+.figures>div>span:nth-of-type(2){
+    color: var(--color-darkgrey);
+    text-transform: uppercase;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+
+}
+
+.hero-buttons :nth-of-type(1){
+    color: var(--color-white);
+    background-color: var(--color-blueberry);
+    width: 8rem;
+}
+
+
+.hero-buttons :nth-of-type(2){
+    color: var(--color-white);
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--color-blueberry);
+
+}
+
+.hero-right>.btn{
+    position:absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-darkgrey);
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position:absolute;
+    right: 4rem;
+    top: 7rem;
+}
+
+.heart-rate>img{
+    width: 2rem;
+}
+.heart-rate>:nth-child(2){
+    color: var(--color-grey);
+
+}
+
+.heart-rate>:nth-child(3){
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+.hero-image{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+    height: 35rem;
+}
+
+.calories{ 
+    display: flex;
+    position:absolute;
+    top: 32rem;
+    right:30rem;
+    gap: 2rem;
+    background-color: var(--color-caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: max-content;
+
+
+}
+
+.calories >img{
+    width: 3rem;
+}
+
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories > div >:nth-child(1){
+    color: var(--color-grey);
+}
+.calories > div >:nth-child(2){
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width : 768px){
+    .hero{
+        flex-direction: column;
+    }
+    .the-best-ad{
+        margin-top: 0;
+        align-self: center;
+        font-size: small;
+        transform: scale(0.8);
+    }
+    .hero-text{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text> div:nth-of-type(3){
+        font-size:small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+
+    }
+    .hero-buttons{
+        justify-content: center;
+    }
+   
+    .figures>div>span:nth-of-type(1){
+        font-size: large;
+    
+    }
+    .figures>div>span:nth-of-type(2){
+        font-size: small;
+    
+    }
+    .hero-right{
+        background: none;
+        position: relative;
+    }
+    .heart-rate{
+        top:2rem;
+        left: 1rem;
+    }
+    .calories{
+        position: relative;
+        top: 6rem;
+        left: 2rem;
+    }
+    .calories>img{
+        width: 2rem;
+    }
+    .calories > div >:nth-child(2){
+        color: var(--color-white);
+        font-size: 1rem;
+    }
+    .hero-image{
+        position: relative;
+        width: 15rem;
+        left: 3rem;
+        top: 8rem; 
+        align-self: center;
+    }
+   
+}

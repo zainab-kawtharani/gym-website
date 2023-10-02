@@ -1,0 +1,80 @@
+.join{
+    display: flex;
+    margin-top: 5rem;
+    padding:0 2rem;
+    gap: 10rem;
+}
+.join-left{
+    color: var(--color-white);
+    position: relative;
+    font-size: 3rem;
+    font-weight:bold;
+    text-transform: uppercase;
+
+}
+.join-left>hr{
+    margin: -10px 0;
+    position:absolute;
+    width: 10.5rem;
+    border: 2px solid var(--color-blueberry);
+    border-radius: 20%;
+}
+
+for adding space between words  
+
+.join-left> div{
+    display: flex;
+    gap: 1rem;
+}
+
+.join-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.email-container{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    color: var(--color-lightgray);
+}
+
+.btn-join{
+    background-color: var(--color-blueberry);
+    color: var(--color-white);
+}
+@media screen and (max-width: 768px){
+    .join{
+        display: flex;
+        flex-direction: column;
+    }
+    .join-left{
+        font-size: xx-large;
+        flex-direction: column;
+       
+    }
+    .join-right{
+        margin-top: -7rem;
+        padding: 2rem;
+        width: 8rem;
+        
+       
+
+    }
+    .email-container{
+        padding-right: 1rem;
+      
+       
+    }
+       
+   
+}
